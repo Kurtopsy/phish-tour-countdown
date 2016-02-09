@@ -1,16 +1,26 @@
+
+
+@font-face {
+  font-family: 'PressStart';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}
 body {
     font: 13px/1.4 'Helvetica Neue', 'Helvetica','Arial', sans-serif;
     color: #333;
-}
-.container {
-    width: 960px;
-    margin: auto;
+	background: url(footer_lodyas.png) repeat;
 }
 h1 {
-    border-bottom: 1px solid #d9d9d9;
+    text-align:center;
+	color:#fff;
+	font-size:60px;
+	font-family: 'Poiret One', cursive;
+	font-weight:300;
+	margin-top:20%;
 }
 h2{
-  position: relative;;
+  position: relative;
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
@@ -22,9 +32,13 @@ h2:before{
   font-size: 0.9em;
 }
 h4{
-	font-family:'Helvetica Neue';
+	/*font-family:'Helvetica Neue';*/
+	font-family: 'PressStart';
 	font-weight:300;
-	font-size:75px;
+	font-size:50px;
+	color:#ffffff;
+	margin-bottom:35px !important;
+	animation:1.5s ease-in-out 0s alternate none infinite running neon1;
 }
 a {
     color: #be2221;
@@ -51,11 +65,6 @@ a {
 .ended {
   background: #c0392b;
 }
-.styled{
-  margin-bottom: 50px;
-  width:555px;
-  margin:0 auto;
-}
 .styled div {
   display: inline-block;
   margin-left: 10px;
@@ -63,6 +72,10 @@ a {
   font-weight: 100;
   line-height: 1;
   text-align: right;
+}
+.styled span {
+	color:#efefef;
+	font-size:40px !important;
 }
 /* IE7 inline-block hack */
 *+html .styled div{
@@ -83,4 +96,12 @@ a {
 }
 .styled div{
 	margin:0 25px;
+}
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
 }
